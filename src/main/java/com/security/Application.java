@@ -19,6 +19,8 @@ public class Application {
         for (String beanName : beanNames) {
             System.out.println(beanName);
         }
+        Object o = ctx.getBean("users");
+        System.out.print( o.toString() );
     }
 
 }
