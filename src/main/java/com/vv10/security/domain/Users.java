@@ -1,4 +1,4 @@
-package com.security.domain;
+package com.vv10.security.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.springframework.beans.factory.annotation.Value;

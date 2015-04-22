@@ -1,7 +1,7 @@
-package com.security.controller;
+package com.vv10.security.controller;
 
-import com.security.domain.User;
-import com.security.domain.Users;
+import com.vv10.security.domain.User;
+import com.vv10.security.domain.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;

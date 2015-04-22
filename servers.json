@@ -1,0 +1,12 @@
+[
+  {
+    "name":"Server 1"
+    ,"ip":"localhost"
+    ,"port":1521
+  },
+  {
+    "name":"Server 2"
+    ,"ip":"127.0.0.1"
+    ,"port":1521
+  }
+]

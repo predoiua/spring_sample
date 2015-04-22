@@ -1,4 +1,4 @@
-package com.security;
+package com.vv10;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,8 +19,13 @@ public class Application {
         for (String beanName : beanNames) {
             System.out.println(beanName);
         }
-        Object o = ctx.getBean("users");
+        Object o;
+        o = ctx.getBean("users");
         System.out.print( o.toString() );
+        o = ctx.getBean("serverConfiguration");
+        System.out.print( o.toString() );
+
     }
+
 
 }

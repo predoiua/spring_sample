@@ -1,6 +1,8 @@
-package com.security.controller;
+package com.vv10.security.controller;
 
-import com.security.domain.Users;
+import com.vv10.security.domain.LoginResponse;
+import com.vv10.security.domain.LoginStatus;
+import com.vv10.security.domain.Users;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +24,12 @@ public class LoginController {
     @Qualifier("users")
     Users users;
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String getLoginPage(@RequestParam Optional<String> error) {
-        LOGGER.debug("Getting login page, error={}", error);
-        return "Hello! You are in.";
+    public LoginResponse getLoginPage(@RequestParam String user, @RequestParam String passwd) {
+        LoginResponse response = new LoginResponse();
+        response.setStatus(LoginStatus.OK);
+        response.setKey("session_key");
+        response.setMessage("welcome !");
+        return response;
     }
 
 }
