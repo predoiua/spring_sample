@@ -655,7 +655,7 @@ abstract public class Shell {
 
   public interface CommandExecutor {
 
-    void execute() throws IOException;
+    void execute() throws IOException, InterruptedException;
 
     int getExitCode() throws IOException;
 
